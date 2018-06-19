@@ -7,7 +7,10 @@ class MovieDetails:
         self.ratings = ratings
 
     def display(self):
-        print("The Movie " + self.name + " with starring " + self.artist + " has been released in " + self.year + " with ratings " + self.ratings)
+        print("The Movie: ", self.name)
+        print("The Artist Name: ", self.artist)
+        print("Release Year : ", self.year)
+        print("Ratings: ", self.ratings)
 
     def update(self):
         name = input("Enter the name of the movie: ")
@@ -16,11 +19,13 @@ class MovieDetails:
         self.artist = artist
         year = input("Enter the year of release: ")
         self.year = year
-        ratings = input("Enter the ratings of movie released: ")
+        ratings = float(input("Enter the ratings of movie released: "))
         self.ratings = ratings
-        print("The", self.name, "starring", self.artist, "has been released in", self.year, "with the ratings",
-              self.ratings)
+        print("Movie: ", self.name)
+        print("Artist Name: ", self.artist)
+        print("Year of release: ", self.year)
+        print("Ratings: ", self.ratings)
 
-movie = MovieDetails("James Bond","Daniel Crag","2010","7.8")
+movie = MovieDetails("James Bond","Daniel Crag","2010", 7.8)
 movie.display()
 movie.update()

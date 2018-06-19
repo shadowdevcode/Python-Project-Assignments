@@ -1,19 +1,23 @@
 class Expenditure:
-    def __init__(self, savings, expenditure):
-        self.savings = savings
+
+    def __init__(self, expenditure, savings):
         self.expenditure = expenditure
+        self.savings = savings
 
-    def display_expense(self):
-        print(self.expenditure)
-        print(self.savings)
+    def display_expense_savings(self):
+        print("Expenditure is: ", self.expenditure)
+        print("Savings are: ", self.savings)
 
-    def cal_salary(self):
-        total = self.savings + self.expenditure
-        print("The total salary is", total)
+    def total_salary(self):
+        print("The total salary is", (self.savings + self.expenditure))
 
 
-savings = input("Enter savings: ")
-expen = input("Enter expenditure: ")
-exp = Expenditure(savings, expen)
-exp.display_expense()
-exp.cal_salary()
+expen = int(input("Enter expenditure: "))
+
+savings = int(input("Enter savings: "))
+
+exp = Expenditure(expen, savings)
+
+exp.display_expense_savings()
+
+exp.total_salary()
