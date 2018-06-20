@@ -1,17 +1,22 @@
-import threading
 import time
+from threading import Thread
 
-def displaylist(threadname, elem, delay):
-    """thread display list function"""
-    counter = 0
-    while counter < 6:
+
+def displaylist(i, delay):
         time.sleep(delay)
-        counter += 1
-        print("%s: %s: %d" % (threadname, time.ctime(time.time()), elem))
+        print("Thread %d : %s" %((i), time.ctime(time.time())))
 
-threadlist = []
+a = []
+for j in range(5):
+    a.append(j)
+print(a)
+delay = 2
 
-for i in range(5):
-    t = threading.Thread(target=displaylist, args=(i,))
-    threadlist.append(t)
-    t.start()
+try:
+
+    for i in a:
+        thread1 = Thread(target = displaylist, args =(i, delay,))
+        thread1.start()
+        delay += 2
+except:
+    print("Error, Thread is not working!")
