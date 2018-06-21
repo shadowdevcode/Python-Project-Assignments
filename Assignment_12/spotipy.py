@@ -1,0 +1,1 @@
+# Not able to access spotify library because of 400 error on developers page. I don't have a premium account.

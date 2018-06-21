@@ -1,0 +1,15 @@
+A library is a collection of functions / objects that serves one particular purpose. you could use a library in a variety of projects.
+
+Eg: 
+import math
+print("The value of pi is", math.pi)
+
+-----------------------------------------------------------
+
+An API is an interface for other programs to interact with your program or library  without having direct access.
+An API (Application Programming Interface) are the functions/methods (the front-end code) in a library that you can call to ask it to do things for you – the interface to the library.
+
+Eg: GET /tasks/
+Eg: 
+response = requests.get("http://api.open-notify.org/iss-pass.json")
+print(response.status_code)
