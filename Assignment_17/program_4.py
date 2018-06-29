@@ -18,4 +18,5 @@ def do_it():
 
 work = Button(root, text = 'Display', command = do_it).pack()
 
-root.mainloop()
+root.mainloop()     # Mainloop is used to make the tkinter window.
+
