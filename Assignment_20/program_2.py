@@ -31,6 +31,8 @@ print(df.tail(5))
 
 print("----------Extracting the Second Column & Performing Statistics over the data asked -------------- \n")
 
-final_data_extract = df.iloc[:, 2].describe()
-print(final_data_extract)
 
+final_data_extract = df.iloc[:, 2].describe()
+
+
+print(final_data_extract)

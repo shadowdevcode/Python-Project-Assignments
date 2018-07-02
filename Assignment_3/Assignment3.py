@@ -8,7 +8,7 @@ my_list.append(second_term)
 
 print(my_list)
 
-my_list.append(['google','apple','facebook','microsoft','tesla'])
+my_list.append(['google', 'apple', 'facebook', 'microsoft', 'tesla'])
 print(my_list)
 
 a = my_list.count(0)

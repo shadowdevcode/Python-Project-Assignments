@@ -17,4 +17,4 @@ print('%s\n %s\n %d\n' % (s, course, fees))
 
 name = "Tony Stark"
 salary = 1000000
-print('%s %d' %(name ,salary))
+print('%s %d' % (name, salary))
